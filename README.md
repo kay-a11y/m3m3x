@@ -1,12 +1,12 @@
-# ɯǝɯǝx
+# m3m3x
 
-ɯǝɯǝx is my chaotic little **`memex`**, a personal knowledge vault wired up with auto generated YAML front matter, CLI helpers, and a flexible docs structure.  
+m3m3x is my chaotic little **`memex`**, a personal knowledge vault wired up with auto generated YAML front matter, CLI helpers, and a flexible docs structure.  
 
 ## Quick‑start
 
 ```bash
-git clone https://github.com/kay-a11y/ɯǝɯǝx.git
-cd ɯǝɯǝx
+git clone https://github.com/kay-a11y/m3m3x.git
+cd m3m3x
 
 pip install -e .
 
