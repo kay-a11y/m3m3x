@@ -19,8 +19,11 @@ memex clean docs/git/*.md -w
 # Initialize config file
 memex init
 
-# drop a new post with auto generated YAML front matter
+# Drop a new post with auto generated YAML front matter
 memex new git-cheatsheet --interactive
+
+# Decode base64 images in Markdown and rewrite links to saved
+memex base2img docs/drafts/example.md
 ```
 
 ## Usage
@@ -34,7 +37,8 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:
-  clean  Clean one or many FILES.
-  init   Initialize .memex.yml and docs/_data/taxonomy.yml.
-  new    Create docs/<folder>/YYYY-MM-DD-<slug>.md with front matter from...
+  base2img  Decode base64 images in Markdown and rewrite links to saved
+  clean     Normalize Unicode punctuation in Markdown files for one or many FILES.
+  init      Initialize .memex.yml and docs/_data/taxonomy.yml.
+  new       Create docs/<folder>/YYYY-MM-DD-<slug>.md with front matter from configs.
 ```
