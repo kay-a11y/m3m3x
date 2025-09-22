@@ -24,6 +24,9 @@ memex new git-cheatsheet --interactive
 
 # Decode base64 images in Markdown and rewrite links to saved
 memex base2img docs/drafts/example.md
+
+# Update the `last_update` field in a single file
+memex yfm touch docs/homenet/2025-08-10-netmap.md
 ```
 
 ## Usage
@@ -41,4 +44,5 @@ Commands:
   clean     Normalize Unicode punctuation in Markdown files for one or many FILES.
   init      Initialize .memex.yml and docs/_data/taxonomy.yml.
   new       Create docs/<folder>/YYYY-MM-DD-<slug>.md with front matter from configs.
+  yfm       YAML Front Matter helpers (inspect, edit, touch).
 ```
