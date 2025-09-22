@@ -32,6 +32,7 @@ from memex.scripts.clean import clean_cmd
 from memex.scripts.init import init_cmd
 from memex.scripts.new import new_cmd
 from memex.scripts.base2img import base2img_cmd
+from memex.scripts.yfm import yfm_cmd
 
 @click.group(
     context_settings=dict(help_option_names=["-h", "--help"]),
@@ -45,6 +46,7 @@ cli.add_command(clean_cmd)
 cli.add_command(init_cmd)
 cli.add_command(new_cmd)
 cli.add_command(base2img_cmd)
+cli.add_command(yfm_cmd)
 
 if __name__ == "__main__":
     cli()
