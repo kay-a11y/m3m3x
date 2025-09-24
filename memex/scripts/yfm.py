@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 memex yfm - Detect front matter, insert/update, normalize key order/quotes.
 memex yfm touch - Update YAML front matter fields

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 memex new - Create a new Markdown doc with YAML front matter
 ===========================================================
