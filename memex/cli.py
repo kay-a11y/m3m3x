@@ -28,18 +28,22 @@ Adding a new command
 """
 
 import click
+
+from memex import __version__
+from memex.scripts.base2img import base2img_cmd
 from memex.scripts.clean import clean_cmd
 from memex.scripts.init import init_cmd
 from memex.scripts.new import new_cmd
-from memex.scripts.base2img import base2img_cmd
-from memex.scripts.yfm import yfm_cmd
 from memex.scripts.taxa import taxa_cmd
+from memex.scripts.yfm import yfm_cmd
+
 
 @click.group(
     context_settings=dict(help_option_names=["-h", "--help"]),
     invoke_without_command=False,
     help="Memex CLI. Run `memex <command> -h` for details.",
 )
+@click.version_option(__version__, "-v", "--version")
 def cli() -> None:
     pass
 
