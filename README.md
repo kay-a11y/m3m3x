@@ -2,6 +2,8 @@
 
 m3m3x is my chaotic little **`memex`**, a personal knowledge vault wired up with auto generated YAML front matter, CLI helpers, and a flexible docs structure.  
 
+[Read the full Wiki →](https://github.com/kay-a11y/m3m3x/wiki)
+
 ## Setup
 
 ```bash
@@ -52,11 +54,20 @@ memex taxa rm tags "idea" "hack"
 
 ## Cheat Sheet
 
-| Command          | Description                           |
-| ---------------- | ------------------------------------- |
-| `memex init`     | Initialize configs and taxonomy       |
-| `memex new`      | Create new doc with YAML front matter |
-| `memex clean`    | Normalize Unicode punctuation         |
-| `memex base2img` | Decode base64 images in Markdown      |
-| `memex taxa`     | List/add/remove categories or tags    |
-| `memex yfm`      | Helpers for YAML Front Matter         |
+```bash
+Usage: memex [OPTIONS] COMMAND [ARGS]...
+
+  Memex CLI. Run `memex <command> -h` for details.
+
+Options:
+  -v, --version  Show the version and exit.
+  -h, --help     Show this message and exit.
+
+Commands:
+  base2img  Decode base64 images in Markdown and rewrite links to saved files.
+  clean     Normalize Unicode punctuation in Markdown files for one or many FILES.
+  init      Initialize .memex.yml and docs/_data/taxonomy.yml.
+  new       Create docs/<folder>/YYYY-MM-DD-<slug>.md with front matter from configs.
+  taxa      Work with your memex taxonomy (categories and tags).
+  yfm       YAML Front Matter helpers (inspect, edit, touch).
+```
